@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="CR-10 Normal Speed PEI PLA E3D" version="2017-10-08 16:35:11" app="S3D-Software 4.0.0">
+<profile name="CR-10 Normal Speed PEI PLA E3D" version="2017-11-14 19:12:19" app="S3D-Software 4.0.0">
   <baseProfile>Default</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Medium</printQuality>
@@ -148,7 +148,7 @@
   <baudRateOverride>115200</baudRateOverride>
   <overridePrinterModels>0</overridePrinterModels>
   <printerModelsOverride></printerModelsOverride>
-  <startingGcode>G28 ; home all axes,G29 ; auto level,G1 Z5 F3000 ; lift,G1 X100 Y25 F1500 ; avoid binder clips,G1 Z0.2 F3000 ; get ready to prime,G92 E0 ; reset extrusion distance,G1 X130 E15 F600 ; prime nozzle,G92 E0 ; reset extrusion distance,G1 X200 F5000 ; quick wipe,,</startingGcode>
+  <startingGcode>G28 ; home all axes,G29 ; auto level,G1 Z5 F3000 ; lift,G1 X100 Y10 F1500 ; avoid binder clips,G1 Z0.2 F3000 ; get ready to prime,G92 E0 ; reset extrusion distance,G1 X130 E10 F600 ; prime nozzle,G92 E0 ; reset extrusion distance,G1 X200 F5000 ; quick wipe,,</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
