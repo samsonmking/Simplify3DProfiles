@@ -1,4 +1,4 @@
 [Material,	LayerHeight,	Mode,		ZOffset]
 [PLA,		0.02,			Normal		-0.93]
-[PLA,		0.03,			Vase,		-0.60]
+[PLA,		0.03,			Vase,		-0.83]
 [PETG,  	0.02,			Normal,		-0.90]
