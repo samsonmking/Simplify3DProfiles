@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="CR-10 Normal Speed PEI PLA E3D" version="2017-11-17 08:39:25" app="S3D-Software 4.0.0">
+<profile name="CR-10 Normal Speed 0.3 PLA" version="2017-11-17 08:39:19" app="S3D-Software 4.0.0">
   <baseProfile>Default</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Medium</printQuality>
@@ -21,7 +21,7 @@
     <wipeDistance>5</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.2</layerHeight>
+  <layerHeight>0.3</layerHeight>
   <topSolidLayers>4</topSolidLayers>
   <bottomSolidLayers>3</bottomSolidLayers>
   <perimeterOutlines>3</perimeterOutlines>
@@ -92,8 +92,8 @@
     <relayBetweenLayers>0</relayBetweenLayers>
     <relayBetweenLoops>0</relayBetweenLoops>
     <stabilizeAtStartup>1</stabilizeAtStartup>
-    <setpoint layer="1" temperature="205"/>
-    <setpoint layer="2" temperature="195"/>
+    <setpoint layer="1" temperature="210"/>
+    <setpoint layer="2" temperature="205"/>
   </temperatureController>
   <temperatureController name="Heated Bed">
     <temperatureNumber>0</temperatureNumber>
@@ -105,8 +105,7 @@
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
-    <setpoint layer="2" speed="25"/>
-    <setpoint layer="5" speed="50"/>
+    <setpoint layer="2" speed="33"/>
   </fanSpeed>
   <blipFanToFullPower>0</blipFanToFullPower>
   <adjustSpeedForCooling>1</adjustSpeedForCooling>
@@ -171,7 +170,7 @@
   <fixedBridgingAngle>0</fixedBridgingAngle>
   <applyBridgingToPerimeters>0</applyBridgingToPerimeters>
   <filamentDiameters>1.71|1.71|1.71|1.71|1.71|1.71</filamentDiameters>
-  <filamentPricesPerKg>30|30|30|30|30|30</filamentPricesPerKg>
+  <filamentPricesPerKg>20|30|30|30|30|30</filamentPricesPerKg>
   <filamentDensities>1.25|1.25|1.25|1.25|1.25|1.25</filamentDensities>
   <useMinPrintHeight>0</useMinPrintHeight>
   <minPrintHeight>200</minPrintHeight>
@@ -207,8 +206,8 @@
       <relayBetweenLayers>0</relayBetweenLayers>
       <relayBetweenLoops>0</relayBetweenLoops>
       <stabilizeAtStartup>1</stabilizeAtStartup>
-      <setpoint layer="1" temperature="205"/>
-      <setpoint layer="2" temperature="195"/>
+      <setpoint layer="1" temperature="210"/>
+      <setpoint layer="2" temperature="205"/>
     </temperatureController>
     <temperatureController name="Heated Bed">
       <temperatureNumber>0</temperatureNumber>
@@ -221,8 +220,7 @@
     <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="25"/>
-      <setpoint layer="5" speed="50"/>
+      <setpoint layer="2" speed="33"/>
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="ABS">
@@ -259,7 +257,7 @@
     <supportInfillPercentage>25</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="Medium">
-    <layerHeight>0.2</layerHeight>
+    <layerHeight>0.3</layerHeight>
     <topSolidLayers>4</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
