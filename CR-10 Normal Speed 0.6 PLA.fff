@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
-<profile name="CR-10 Normal Speed PEI PLA E3D" version="2018-01-07 16:46:17" app="S3D-Software 4.0.0">
+<profile name="CR-10 Normal Speed 0.6 PLA" version="2018-01-20 11:39:11" app="S3D-Software 4.0.0">
   <baseProfile>Default</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Medium</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Extruder 1">
     <toolheadNumber>0</toolheadNumber>
-    <diameter>0.4</diameter>
+    <diameter>0.8</diameter>
     <autoWidth>1</autoWidth>
-    <width>0.48</width>
+    <width>0.96</width>
     <extrusionMultiplier>1</extrusionMultiplier>
     <useRetract>1</useRetract>
-    <retractionDistance>4</retractionDistance>
+    <retractionDistance>3.75</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
     <retractionZLift>0</retractionZLift>
     <retractionSpeed>2400</retractionSpeed>
@@ -21,7 +21,7 @@
     <wipeDistance>5</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.2</layerHeight>
+  <layerHeight>0.6</layerHeight>
   <topSolidLayers>4</topSolidLayers>
   <bottomSolidLayers>3</bottomSolidLayers>
   <perimeterOutlines>3</perimeterOutlines>
@@ -45,8 +45,8 @@
   <useSkirt>1</useSkirt>
   <skirtExtruder>0</skirtExtruder>
   <skirtLayers>1</skirtLayers>
-  <skirtOutlines>10</skirtOutlines>
-  <skirtOffset>0</skirtOffset>
+  <skirtOutlines>1</skirtOutlines>
+  <skirtOffset>5</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
   <primePillarExtruder>999</primePillarExtruder>
   <primePillarWidth>12</primePillarWidth>
@@ -105,8 +105,7 @@
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
-    <setpoint layer="2" speed="25"/>
-    <setpoint layer="5" speed="50"/>
+    <setpoint layer="2" speed="33"/>
   </fanSpeed>
   <blipFanToFullPower>0</blipFanToFullPower>
   <adjustSpeedForCooling>1</adjustSpeedForCooling>
@@ -148,7 +147,7 @@
   <baudRateOverride>115200</baudRateOverride>
   <overridePrinterModels>0</overridePrinterModels>
   <printerModelsOverride></printerModelsOverride>
-  <startingGcode>G28 ; home all axes,G29 ; auto level,G1 Z5 F3000 ; lift,G1 X100 Y10 F1500 ; avoid binder clips,G1 Z0.2 F3000 ; get ready to prime,G92 E0 ; reset extrusion distance,G1 X130 E10 F600 ; prime nozzle,G92 E0 ; reset extrusion distance,G1 X200 F5000 ; quick wipe</startingGcode>
+  <startingGcode>G28 ; home all axes,G29 ; auto level,G1 Z5 F3000 ; lift,G1 X100 Y10 F1500 ; avoid binder clips,G1 Z0.2 F3000 ; get ready to prime,G92 E0 ; reset extrusion distance,G1 X130 E10 F600 ; prime nozzle,G92 E0 ; reset extrusion distance,G1 X200 F5000 ; quick wipe,,</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
@@ -171,12 +170,12 @@
   <fixedBridgingAngle>0</fixedBridgingAngle>
   <applyBridgingToPerimeters>0</applyBridgingToPerimeters>
   <filamentDiameters>1.71|1.71|1.71|1.71|1.71|1.71</filamentDiameters>
-  <filamentPricesPerKg>30|30|30|30|30|30</filamentPricesPerKg>
+  <filamentPricesPerKg>20|30|30|30|30|30</filamentPricesPerKg>
   <filamentDensities>1.25|1.25|1.25|1.25|1.25|1.25</filamentDensities>
   <useMinPrintHeight>0</useMinPrintHeight>
   <minPrintHeight>200</minPrintHeight>
   <useMaxPrintHeight>0</useMaxPrintHeight>
-  <maxPrintHeight>0</maxPrintHeight>
+  <maxPrintHeight>10</maxPrintHeight>
   <useDiaphragm>0</useDiaphragm>
   <diaphragmLayerInterval>20</diaphragmLayerInterval>
   <robustSlicing>1</robustSlicing>
@@ -221,8 +220,7 @@
     <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="25"/>
-      <setpoint layer="5" speed="50"/>
+      <setpoint layer="2" speed="33"/>
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="ABS">
@@ -259,7 +257,7 @@
     <supportInfillPercentage>25</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="Medium">
-    <layerHeight>0.2</layerHeight>
+    <layerHeight>0.6</layerHeight>
     <topSolidLayers>4</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
