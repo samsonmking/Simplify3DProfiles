@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="CR-10 0.3 PLA No Brim" version="2018-06-16 22:05:19" app="S3D-Software 4.0.1">
+<profile name="CR-10 0.3 PLA" version="2018-06-18 21:06:37" app="S3D-Software 4.0.1">
   <baseProfile>Default</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Medium</printQuality>
@@ -45,8 +45,8 @@
   <useSkirt>1</useSkirt>
   <skirtExtruder>0</skirtExtruder>
   <skirtLayers>1</skirtLayers>
-  <skirtOutlines>1</skirtOutlines>
-  <skirtOffset>5</skirtOffset>
+  <skirtOutlines>10</skirtOutlines>
+  <skirtOffset>0</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
   <primePillarExtruder>999</primePillarExtruder>
   <primePillarWidth>12</primePillarWidth>

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="CR-10 Normal Speed 0.6 PLA" version="2018-01-20 11:39:11" app="S3D-Software 4.0.0">
+<profile name="CR-10 Normal Speed 0.6 PLA" version="2018-01-20 11:39:11" app="S3D-Software 4.0.1">
   <baseProfile>Default</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Medium</printQuality>

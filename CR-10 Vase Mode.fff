@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="CR-10 Vase Mode" version="2017-11-17 08:10:42" app="S3D-Software 4.0.0">
+<profile name="CR-10 Vase Mode" version="2017-11-17 08:10:42" app="S3D-Software 4.0.1">
   <baseProfile>Default</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Medium</printQuality>
