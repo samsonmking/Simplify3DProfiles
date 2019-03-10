@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="CR-10 Normal Speed" version="2017-10-08 16:35:19" app="S3D-Software 4.0.1">
+<profile name="CR-10 Normal Speed" version="2018-12-27 21:49:18" app="S3D-Software 4.0.1">
   <baseProfile>Default</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Medium</printQuality>
@@ -45,8 +45,8 @@
   <useSkirt>1</useSkirt>
   <skirtExtruder>0</skirtExtruder>
   <skirtLayers>1</skirtLayers>
-  <skirtOutlines>1</skirtOutlines>
-  <skirtOffset>5</skirtOffset>
+  <skirtOutlines>10</skirtOutlines>
+  <skirtOffset>0</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
   <primePillarExtruder>999</primePillarExtruder>
   <primePillarWidth>12</primePillarWidth>
@@ -62,7 +62,7 @@
   <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Fast Honeycomb</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>15</infillPercentage>
+  <infillPercentage>20</infillPercentage>
   <outlineOverlapPercentage>15</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>100</infillExtrusionWidthPercentage>
   <minInfillLength>5</minInfillLength>
@@ -105,7 +105,7 @@
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
-    <setpoint layer="2" speed="100"/>
+    <setpoint layer="2" speed="50"/>
   </fanSpeed>
   <blipFanToFullPower>0</blipFanToFullPower>
   <adjustSpeedForCooling>1</adjustSpeedForCooling>
@@ -115,7 +115,7 @@
   <minFanLayerTime>45</minFanLayerTime>
   <maxCoolingFanSpeed>50</maxCoolingFanSpeed>
   <increaseFanForBridging>1</increaseFanForBridging>
-  <bridgingFanSpeed>100</bridgingFanSpeed>
+  <bridgingFanSpeed>75</bridgingFanSpeed>
   <use5D>1</use5D>
   <relativeEdistances>0</relativeEdistances>
   <allowEaxisZeroing>1</allowEaxisZeroing>
@@ -147,7 +147,7 @@
   <baudRateOverride>115200</baudRateOverride>
   <overridePrinterModels>0</overridePrinterModels>
   <printerModelsOverride></printerModelsOverride>
-  <startingGcode>G28 ; home all axes,G29 ; auto level,G1 Z5 F3000 ; lift,G1 X100 Y25 F1500 ; avoid binder clips,G1 Z0.1 F3000 ; get ready to prime,G92 E0 ; reset extrusion distance,G1 X200 E15 F600 ; prime nozzle,G92 E0 ; reset extrusion distance,G1 X250 F5000 ; quick wipe,,</startingGcode>
+  <startingGcode>G28 ; home all axes,G29 ; auto level,G1 Z5 F3000 ; lift,G1 X100 Y10 F1500 ; avoid binder clips,G1 Z0.1 F3000 ; get ready to prime,G92 E0 ; reset extrusion distance,G1 X130 E10 F600 ; prime nozzle,G92 E0 ; reset extrusion distance,G1 X200 F5000 ; quick wipe,</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
@@ -155,7 +155,7 @@
   <exportFileFormat>gcode</exportFileFormat>
   <celebration>0</celebration>
   <celebrationSong>Star Wars</celebrationSong>
-  <postProcessing>curl -k -H &quot;X-Api-Key:A31EC9EE3A034D25984A316B8339DD1D&quot; -F &quot;select=false&quot; -F &quot;print=false&quot; -F &quot;file=@[output_filepath]&quot; &quot;http://192.168.1.101/api/files/local&quot;</postProcessing>
+  <postProcessing>curl -k -H &quot;X-Api-Key:3995C083244540489453EC7964410D4B&quot; -F &quot;select=false&quot; -F &quot;print=false&quot; -F &quot;file=@[output_filepath]&quot; &quot;http://192.168.1.101/api/files/local&quot;,rm [output_filepath]</postProcessing>
   <defaultSpeed>3600</defaultSpeed>
   <outlineUnderspeed>0.5</outlineUnderspeed>
   <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
@@ -169,7 +169,7 @@
   <useFixedBridgingAngle>0</useFixedBridgingAngle>
   <fixedBridgingAngle>0</fixedBridgingAngle>
   <applyBridgingToPerimeters>0</applyBridgingToPerimeters>
-  <filamentDiameters>1.71|1.71|1.71|1.71|1.71|1.71</filamentDiameters>
+  <filamentDiameters>1.72|1.71|1.71|1.71|1.71|1.71</filamentDiameters>
   <filamentPricesPerKg>30|30|30|30|30|30</filamentPricesPerKg>
   <filamentDensities>1.25|1.25|1.25|1.25|1.25|1.25</filamentDensities>
   <useMinPrintHeight>0</useMinPrintHeight>
@@ -220,7 +220,7 @@
     <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="100"/>
+      <setpoint layer="2" speed="50"/>
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="ABS">
@@ -261,7 +261,7 @@
     <topSolidLayers>4</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
-    <infillPercentage>15</infillPercentage>
+    <infillPercentage>20</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="High">
