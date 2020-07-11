@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="CR-10 Normal Speed 0.3 PLA" version="2020-07-11 10:33:13" app="S3D-Software 4.1.1">
+<profile name="CR-10 Normal Speed 0.2 PLA" version="2020-07-11 10:35:04" app="S3D-Software 4.1.1">
   <baseProfile>Default</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Medium</printQuality>
@@ -11,17 +11,17 @@
     <width>0.48</width>
     <extrusionMultiplier>1</extrusionMultiplier>
     <useRetract>1</useRetract>
-    <retractionDistance>3.75</retractionDistance>
+    <retractionDistance>5</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
-    <retractionZLift>0</retractionZLift>
-    <retractionSpeed>2400</retractionSpeed>
+    <retractionZLift>0.15</retractionZLift>
+    <retractionSpeed>5400</retractionSpeed>
     <useCoasting>0</useCoasting>
     <coastingDistance>0.2</coastingDistance>
     <useWipe>1</useWipe>
     <wipeDistance>5</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.3</layerHeight>
+  <layerHeight>0.2</layerHeight>
   <topSolidLayers>4</topSolidLayers>
   <bottomSolidLayers>3</bottomSolidLayers>
   <perimeterOutlines>3</perimeterOutlines>
@@ -45,8 +45,8 @@
   <useSkirt>1</useSkirt>
   <skirtExtruder>0</skirtExtruder>
   <skirtLayers>1</skirtLayers>
-  <skirtOutlines>10</skirtOutlines>
-  <skirtOffset>0</skirtOffset>
+  <skirtOutlines>2</skirtOutlines>
+  <skirtOffset>5</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
   <primePillarExtruder>999</primePillarExtruder>
   <primePillarWidth>12</primePillarWidth>
@@ -62,7 +62,7 @@
   <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Fast Honeycomb</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>10</infillPercentage>
+  <infillPercentage>20</infillPercentage>
   <outlineOverlapPercentage>15</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>100</infillExtrusionWidthPercentage>
   <minInfillLength>5</minInfillLength>
@@ -70,7 +70,7 @@
   <internalInfillAngles>0</internalInfillAngles>
   <overlapInternalInfillAngles>0</overlapInternalInfillAngles>
   <externalInfillAngles>45,-45</externalInfillAngles>
-  <generateSupport>0</generateSupport>
+  <generateSupport>1</generateSupport>
   <supportExtruder>0</supportExtruder>
   <supportInfillPercentage>30</supportInfillPercentage>
   <supportExtraInflation>0</supportExtraInflation>
@@ -101,7 +101,7 @@
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
-    <setpoint layer="2" speed="33"/>
+    <setpoint layer="2" speed="50"/>
   </fanSpeed>
   <blipFanToFullPower>0</blipFanToFullPower>
   <adjustSpeedForCooling>1</adjustSpeedForCooling>
@@ -111,9 +111,9 @@
   <minFanLayerTime>45</minFanLayerTime>
   <maxCoolingFanSpeed>50</maxCoolingFanSpeed>
   <increaseFanForBridging>1</increaseFanForBridging>
-  <bridgingFanSpeed>100</bridgingFanSpeed>
+  <bridgingFanSpeed>75</bridgingFanSpeed>
   <use5D>1</use5D>
-  <relativeEdistances>1</relativeEdistances>
+  <relativeEdistances>0</relativeEdistances>
   <allowEaxisZeroing>1</allowEaxisZeroing>
   <independentExtruderAxes>0</independentExtruderAxes>
   <includeM10123>0</includeM10123>
@@ -143,7 +143,7 @@
   <baudRateOverride>115200</baudRateOverride>
   <overridePrinterModels>0</overridePrinterModels>
   <printerModelsOverride></printerModelsOverride>
-  <startingGcode>G28 ; home all axes,G29 ; auto level,G1 Z5 F3000 ; lift,G1 X100 Y10 F1500 ; avoid binder clips,G1 Z0.2 F3000 ; get ready to prime,G92 E0 ; reset extrusion distance,G1 X130 E10 F600 ; prime nozzle,G92 E0 ; reset extrusion distance,G1 X200 F5000 ; quick wipe,,</startingGcode>
+  <startingGcode>G28 ; home all axes,G29 ; auto level,G1 Z5 F3000 ; lift,G1 X100 Y10 F1500 ; avoid binder clips,G1 Z0.1 F3000 ; get ready to prime,G92 E0 ; reset extrusion distance,G1 X130 E10 F600 ; prime nozzle,G92 E0 ; reset extrusion distance,G1 X200 F5000 ; quick wipe,</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
@@ -165,13 +165,13 @@
   <useFixedBridgingAngle>0</useFixedBridgingAngle>
   <fixedBridgingAngle>0</fixedBridgingAngle>
   <applyBridgingToPerimeters>0</applyBridgingToPerimeters>
-  <filamentDiameters>1.71|1.71|1.71|1.71|1.71|1.71</filamentDiameters>
-  <filamentPricesPerKg>20|30|30|30|30|30</filamentPricesPerKg>
+  <filamentDiameters>1.72|1.71|1.71|1.71|1.71|1.71</filamentDiameters>
+  <filamentPricesPerKg>30|30|30|30|30|30</filamentPricesPerKg>
   <filamentDensities>1.25|1.25|1.25|1.25|1.25|1.25</filamentDensities>
   <useMinPrintHeight>0</useMinPrintHeight>
   <minPrintHeight>200</minPrintHeight>
   <useMaxPrintHeight>0</useMaxPrintHeight>
-  <maxPrintHeight>10</maxPrintHeight>
+  <maxPrintHeight>0</maxPrintHeight>
   <useDiaphragm>0</useDiaphragm>
   <diaphragmLayerInterval>20</diaphragmLayerInterval>
   <robustSlicing>1</robustSlicing>
@@ -212,7 +212,7 @@
     <globalExtrusionMultiplier>1</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
-      <setpoint layer="2" speed="33"/>
+      <setpoint layer="2" speed="50"/>
     </fanSpeed>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="ABS">
@@ -249,11 +249,11 @@
     <supportInfillPercentage>25</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="Medium">
-    <layerHeight>0.3</layerHeight>
+    <layerHeight>0.2</layerHeight>
     <topSolidLayers>4</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
-    <infillPercentage>10</infillPercentage>
+    <infillPercentage>20</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="High">
